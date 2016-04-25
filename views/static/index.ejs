@@ -1,1 +1,11 @@
-<h1>Bienvenido a mi primer proyecto con sails</h1>
+<div class="container">
+    <form class="form-signin">
+        <h2>Introduce tus datos</h2>
+        <label for="inputEmail">Correo Electronico
+            <input type="email" id="inputEmail" class="form-control" placeholder="Introduzca su correo electronico" name="email" required autofocus>
+        <label for="inputPassword">Password
+            <input type="password" id="inputPassword" class="form-control" placeholder="Introduzca su contraseña" name="password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar!
+        <input type="hidden" name="_csrf" value="<%=_csrf %>"/>
+    </form>
+</div>

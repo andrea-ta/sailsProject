@@ -6,7 +6,6 @@
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-
     <!--
         Stylesheets and Preprocessors
         ==============================
@@ -38,6 +37,38 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://localhost:1337/">Inicio</a>
+          <a class="navbar-brand" href="/user/create/">Mi Tablon</a>
+          <a class="navbar-brand" href="/user/create/">Crear Usuario</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form action="" class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Introduzca su correo" name="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Introduzca su contraseña" name="password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Entrar!</button>
+            <input type="hidden" name="_csrf" value="<%=_csrf %>"/>
+            <a href="/user/create/">¿Aún no tienes cuenta?</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+
+
     <%- body %>
 
 
